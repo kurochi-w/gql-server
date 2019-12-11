@@ -1,0 +1,21 @@
+type Memo {
+    _id: String!
+    memo_no: Int!
+    title: String!
+    content: String!
+}
+
+type Query {
+    memo(memo_no: Int!): Memo
+    memos: [Memo]!
+}
+
+type Mutation {
+    addMemo(memo_no: Int!, title: String!, content: String!): Boolean!
+}
+
+type AddMemoResponse {
+    memo: Memo!
+    success: Boolean!
+    timestamp: String!
+}
