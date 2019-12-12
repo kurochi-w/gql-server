@@ -11,7 +11,7 @@ type Query {
 }
 
 type Mutation {
-    addMemo(memo_no: Int!, title: String!, content: String!): Boolean!
+    addMemo(title: String!, content: String!): Boolean!
 }
 
 type AddMemoResponse {
